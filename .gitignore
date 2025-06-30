@@ -35,3 +35,4 @@ venv/
 env/
 ENV/
 to-do-app/frontend/node_modules/
+node_modules

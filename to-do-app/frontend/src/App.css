@@ -6,14 +6,55 @@ body {
 }
 
 .App {
-  max-width: 400px;
+  max-width: 700px; /* antes 400px */
   margin: 60px auto;
   background: #fff;
   border-radius: 16px;
   box-shadow: 0 8px 32px rgba(60,60,60,0.12);
   padding: 32px 24px 24px 24px;
 }
+.dots-btn {
+  background: none;
+  border: none;
+  font-size: 1.7rem;
+  cursor: pointer;
+  padding: 0 10px;
+  color: #888;
+  transition: color 0.2s;
+}
 
+.dots-btn:hover {
+  color: #007bff;
+}
+
+.menu-popup {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  background: #fff;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(60,60,60,0.13);
+  display: flex;
+  flex-direction: column;
+  min-width: 170px;
+  z-index: 10;
+}
+
+.menu-popup button {
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 12px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #222;
+  transition: background 0.2s;
+}
+
+.menu-popup button:hover {
+  background: #f1f3f6;
+}
 h1 {
   text-align: center;
   color: #222;
@@ -83,4 +124,96 @@ li button {
 
 li button:hover {
   background: #d9363e;
+}
+
+.add-btn {
+  display: block;
+  margin: 0 auto 24px auto;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.add-btn:hover {
+  background: #0056b3;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.modal {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(60,60,60,0.18);
+  padding: 32px 28px 24px 28px;
+  min-width: 400px;      /* Más ancho */
+  max-width: 98vw;
+}
+
+.modal form {
+  display: flex;
+  flex-direction: column; /* Columna */
+  gap: 12px;
+  margin-right: 18px;
+}
+
+.modal h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.modal input {
+  width: 100%;
+  margin-bottom: 0; /* Elimina el margen inferior, ya hay gap */
+  padding: 12px;
+  border-radius: 7px;
+  border: 1px solid #e1e1e1;
+  font-size: 1rem;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.modal-actions button {
+  flex: 1;
+  padding: 10px 0;
+  border-radius: 7px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.modal-actions button[type="submit"] {
+  background: #007bff;
+  color: #fff;
+}
+
+.modal-actions button[type="submit"]:hover {
+  background: #0056b3;
+}
+
+.modal-actions button[type="button"] {
+  background: #e1e1e1;
+  color: #333;
+}
+
+.modal-actions button[type="button"]:hover {
+  background: #ccc;
 }
