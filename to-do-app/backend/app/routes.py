@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException
 from typing import List
-from schemas import Todo
+from app.schemas import Todo
 
 router = APIRouter()
 
