@@ -1,0 +1,37 @@
+# Ignorar node_modules y builds del frontend
+to-do-app/frontend/node_modules/
+to-do-app/frontend/build/
+to-do-app/frontend/dist/
+to-do-app/frontend/package-lock.json
+to-do-app/frontend/yarn.lock
+to-do-app/frontend/.env
+to-do-app/frontend/.DS_Store
+
+# Ignorar archivos de logs de npm/yarn
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignorar archivos de Python y cachés del backend
+to-do-app/backend/app/__pycache__/
+to-do-app/backend/.env
+to-do-app/backend/.venv/
+to-do-app/backend/venv/
+to-do-app/backend/*.pyc
+to-do-app/backend/__pycache__/
+to-do-app/backend/.DS_Store
+
+# Ignorar archivos de bases de datos temporales
+to-do-app/backend/*.sqlite3
+to-do-app/backend/*.db
+
+# Ignorar archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar entornos virtuales en la raíz
+.venv/
+venv/
+env/
+ENV/
+to-do-app/frontend/node_modules/
